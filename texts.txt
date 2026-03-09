@@ -1,11 +1,11 @@
 # Редактируйте тексты сайта здесь (формат: ключ=значение).
 # Для переноса строки используйте <br> внутри значения.
-name=codrago
+name=ivolgadev
 info_html=🌍 From: Russia<br>🐍 Python Developer
-tag1=Heroku
-tag2=heroku-tl
-btn_telegram=Telegram
+tag1=ivolga
+tag2=Ivolga
+btn_telegram=Telegram 
 btn_github=GitHub
-btn_modules=Modules
-btn_donate=Donate
-footer=Created by @exodiast
+btn_modules= coming soon...
+btn_donate= Donate
+footer=Created by Ivolga
