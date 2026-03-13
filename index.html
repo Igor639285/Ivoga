@@ -147,7 +147,6 @@
   </style>
 </head>
 <body>
-  <audio id="bgmusic" src="./1.mp3" loop></audio>
   <canvas id="snow"></canvas>
 
   <main class="card">
@@ -308,11 +307,21 @@
       resize();
       initFlakes();
     });
-    draw();
-    document.addEventListener("click", () => {
-  const a = document.getElementById("bgmusic");
-  if (a.paused) a.play();
+    draw();// Логика фоновой музыки
+const audio = document.getElementById('bgMusic');
+
+// Функция запуска
+const startMusic = () => {
+  audio.play().catch(() => {
+    console.log("Ждем взаимодействия");
   });
+  // Удаляем прослушиватель после первого срабатывания
+  document.removeEventListener('click', startMusic);
+  document.removeEventListener('touchstart', startMusic);
+};
+document.addEventListener('click', startMusic);
+document.addEventListener('touchstart', startMusic);
+
   </script>
 </body>
 </html>
