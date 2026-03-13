@@ -317,9 +317,6 @@ const startMusic = () => {
   audio.play().catch(() => {
     console.log("Ждем взаимодействия");
   });
-  // Удаляем прослушиватель после первого срабатывания
-  document.removeEventListener('click', startMusic);
-  document.removeEventListener('touchstart', startMusic);
 };
 document.addEventListener('click', startMusic);
 document.addEventListener('touchstart', startMusic);
